@@ -1,0 +1,140 @@
+{
+  "name": "ap-services-ui",
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/frontend/index.html"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/frontend/index.html"
+    },
+    {
+      "src": "/login.html",
+      "dest": "/frontend/login.html"
+    },
+    {
+      "src": "/login-success.html",
+      "dest": "/frontend/login-success.html"
+    },
+    {
+      "src": "/dashboard",
+      "dest": "/frontend/dashboard.html"
+    },
+    {
+      "src": "/dashboard.html",
+      "dest": "/frontend/dashboard.html"
+    },
+    {
+      "src": "/auth/google/callback",
+      "dest": "/frontend/oauth-callback-bridge.html"
+    },
+    {
+      "src": "/auth/github/callback",
+      "dest": "/frontend/oauth-callback-bridge.html"
+    },
+    {
+      "src": "/auth/facebook/callback",
+      "dest": "/frontend/oauth-callback-bridge.html"
+    },
+    {
+      "src": "/api/google/callback",
+      "dest": "/frontend/oauth-callback-bridge.html"
+    },
+    {
+      "src": "/register.html",
+      "dest": "/frontend/register.html"
+    },
+    {
+      "src": "/services.html",
+      "dest": "/frontend/services.html"
+    },
+    {
+      "src": "/worker-profile.html",
+      "dest": "/frontend/worker-profile.html"
+    },
+    {
+      "src": "/booking.html",
+      "dest": "/frontend/booking.html"
+    },
+    {
+      "src": "/customer-dashboard.html",
+      "dest": "/frontend/customer-dashboard.html"
+    },
+    {
+      "src": "/worker-dashboard.html",
+      "dest": "/frontend/worker-dashboard.html"
+    },
+    {
+      "src": "/worker-register.html",
+      "dest": "/frontend/worker-dashboard.html"
+    },
+    {
+      "src": "/admin-dashboard.html",
+      "dest": "/frontend/admin-dashboard.html"
+    },
+    {
+      "src": "/about.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/contact.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/careers.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/blog.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/press.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/safety.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/faq.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/terms.html",
+      "dest": "/frontend/help.html"
+    },
+    {
+      "src": "/privacy.html",
+      "dest": "/frontend/privacypolicy.html"
+    },
+    {
+      "src": "/forgot-password.html",
+      "dest": "/frontend/login.html"
+    },
+    {
+      "src": "/services/(.*)\\.html",
+      "dest": "/frontend/services.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/frontend/styles.css"
+    },
+    {
+      "src": "/app.js",
+      "dest": "/frontend/app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/$1"
+    }
+  ]
+}
